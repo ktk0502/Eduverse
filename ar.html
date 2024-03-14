@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Product Viewer</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/2.3.0/aframe/build/aframe-ar.js"></script>
+</head>
+<body>
+    <h1>Products</h1>
+    <div class="product">
+        <h2>Product 1</h2>
+        <button onclick="viewInAR('https://example.com/product1.gltf', 'https://example.com/marker1.patt')">View in AR</button>
+    </div>
+
+    <div class="product">
+        <h2>Product 2</h2>
+        <button onclick="viewInAR('https://example.com/product2.gltf', 'https://example.com/marker2.patt')">View in AR</button>
+    </div>
+
+    <!-- Add more product entries as needed -->
+
+    <a-scene embedded arjs="sourceType: webcam; trackingMethod: best; debugUIEnabled: false;">
+        <a-marker preset="custom" type="pattern" url="https://example.com/default-marker.patt">
+            <a-entity id="ar-object" position="0 0 0"></a-entity>
+        </a-marker>
+    </a-scene>
+
+    <script>
+        function viewInAR(modelUrl, markerPattern) {
+            const arObject = document.getElementById("ar-object");
+            arObject.setAttribute("gltf-model", modelUrl);
+            const marker = document.querySelector("a-marker");
+            marker.setAttribute("url", markerPattern);
+        }
+    </script>
+</body>
+</html>
