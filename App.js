@@ -140,4 +140,41 @@ res.render("about")
   app.get("/sproduct.ejs",(req,res)=>{
     res.render("sproduct")
     })
+
+    app.get("/solidstate.ejs",(req,res)=>{
+      res.render("solidstate")
+      })
+
+    app.get("/atomschemistry.ejs",(req,res)=>{
+      res.render("atomschemistry")
+      })
+    app.get("/hydrocarbons.ejs",(req,res)=>{
+      res.render("hydrocarbons")
+      })
+
+    app.get("/organicchemistry.ejs",(req,res)=>{
+      res.render("organicchemistry")
+      })
+
+      app.get("/Humananatomy.ejs",(req,res)=>{
+        res.render("Humananatomy")
+        })
+
+      app.get("/Animals.ejs",(req,res)=>{
+        res.render("Animals")
+        })
+      app.get("/Plants.ejs",(req,res)=>{
+        res.render("Plants")
+        })
+      app.get("/Microorgans.ejs",(req,res)=>{
+        res.render("Microorgans")
+        })
+      app.get("/Atomsphysics.ejs",(req,res)=>{
+        res.render("Atomsphysics")
+      })
+      app.get("/Sloarsystem.ejs",(req,res)=>{
+        res.render("Solarsystem")
+        })
+    
+
 module.exports = app;

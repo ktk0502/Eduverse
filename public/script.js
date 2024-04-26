@@ -37,3 +37,51 @@ if (close) {
         wrapper.classList.remove('active-popup');
     });
     
+    function redirectToDestination() {
+        // Change the URL to the desired destination
+        window.location.href = '/solidstate.ejs'; // Replace '/destination' with your desired route
+    }
+    function redirectToDestination2() {
+        // Change the URL to the desired destination
+        window.location.href = '/hydrocarbons.ejs'; // Replace '/destination' with your desired route
+    }
+    function redirectToDestination3() {
+        // Change the URL to the desired destination
+        window.location.href = '/organicchemistry.ejs'; // Replace '/destination' with your desired route
+    }
+    function redirectToDestination4() {
+        // Change the URL to the desired destination
+        window.location.href = '/atomschemistry.ejs'; // Replace '/destination' with your desired route
+    }
+    function redirectToDestination5() {
+        // Change the URL to the desired destination
+        window.location.href = '/Humananatomy.ejs'; // Replace '/destination' with your desired route
+    }
+    function redirectToDestination6() {
+        // Change the URL to the desired destination
+        window.location.href = '/Microorgans.ejs'; // Replace '/destination' with your desired route
+    }
+    function redirectToDestination7() {
+        // Change the URL to the desired destination
+        window.location.href = '/Animals.ejs'; // Replace '/destination' with your desired route
+    }
+    function redirectToDestination8() {
+        // Change the URL to the desired destination
+        window.location.href = '/Plants.ejs'; // Replace '/destination' with your desired route
+    }
+    function redirectToDestination9() {
+        // Change the URL to the desired destination
+        window.location.href = '/Atomsphysics.ejs'; // Replace '/destination' with your desired route
+    }
+    function redirectToDestination10() {
+        // Change the URL to the desired destination
+        window.location.href = '/Solarsystem.ejs'; // Replace '/destination' with your desired route
+    }
+    function redirectToDestination11() {
+        // Change the URL to the desired destination
+        window.location.href = '/Atomsphysics.ejs'; // Replace '/destination' with your desired route
+    }
+    function redirectToDestination12() {
+        // Change the URL to the desired destination
+        window.location.href = '/Solarsystem.ejs'; // Replace '/destination' with your desired route
+    }
